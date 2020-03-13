@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta id="data" data-status="EDITING" data-stripe-pk="pk_live_7uNGuAO6swP4UsvxhscP0WMS" data-payments="0">
+
+    <title>Ekaadhikar Management Console</title>
+
+    <meta name="description" content="" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:admins" content="100004130346820" />
+    <meta id="data-locale" data-locale="en">
+
+    <link href="https://plus.google.com/111850198888069322953" rel="publisher" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+
+    <link rel="manifest" href="/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&subset=latin-ext" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="/css/opavote.css" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" integrity="sha384-6ePHh72Rl3hKio4HiJ841psfsRJveeS+aLoaEf3BWfS+gTF0XdAqku2ka8VddikM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/opavote.min.js"></script>
+
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" integrity="sha384-FFgGfda92tXC8nCNOxrCQ3R8x1TNkMFqDZVQdDaaJiiVbjkPBXIJBx0o7ETjy8Bh" crossorigin="anonymous"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+<![endif]-->
+
+    <noscript>
+<style>.js-only { display:none; }</style>
+</noscript>
+
+
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/smoothness/jquery-ui.min.css" type="text/css" rel="stylesheet" />
+    <meta id="data-eid" data-eid=5566908336177152>
+    <script src="//cdn.ckeditor.com/4.5.9/standard-all/ckeditor.js"></script>
+
+</head>
+
+<body>
+
+    <style>
+        .navbar-side-header img {
+            width: 150px;
+            height: auto;
+        }
+    </style>
+    <div class="content election-bg">
+
+        <div class="navbar-side">
+
+            <div class="navbar-side-header">
+                <a href="/"><img src="/img/Ekaadhikar/Ekaadhikar.png" alt="OpaVote Online Voting"></a>
+                <button type="button" data-toggle="collapse" data-target="#menu-content" aria-expanded="false" aria-controls="navbar" class="collapsed navbar-toggle">
+    <span class="sr-only">Toggle navigation</span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    </button>
+            </div>
+
+            <ul id="menu-content" class="collapse">
+                <li><a href="/console"><span class="glyphicon glyphicon-list"></span> Items</a></li>
+                <li><a href="/payments"><span class="glyphicon glyphicon-usd"></span> Payments</a></li>
+                <li><a href="/account"><span class="glyphicon glyphicon-user"></span> Account</a></li>
+                <li><a href="/help/overview" target="_blank"><span class="glyphicon glyphicon-question-sign"></span> Help</a></li>
+                <li><a href="/logout"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+            </ul>
+
+        </div>
+
+        <div class="container-fluid manage js-only">
+
+            <div class="chunk">
+
+                <h1>Election Management &mdash; EDITING</h1>
+
+
+                <h2>Election Title</h2>
+
+                <div class="row">
+
+                    <div class="col-xs-12 col-sm-6">
+                        <p>Provide information about the election below. Use the buttons below to save and start voting or to save and stay in this stage. Once you go to the next stage, you can no longer edit any information on this page so double check
+                            before proceeding.</p>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-6">
+
+                        <p><b>Price:</b> $<span id="price">0</span></p>
+                        <p>We&#39;ll transfer this amount from your account balance or charge your credit card when you start voting.</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <form class="form-horizontal" method="POST">
+                <input id="csrf_token" name="csrf_token" type="hidden" value="20200316081125##1ddc55abdec2d53d5140ed460621a10d0f18ad0e">
+                <input type="submit" disabled style="display: none" aria-hidden="true" />
+
+                <input id="stripe-token" type="hidden" name="stripeToken" />
+                <input type="hidden" name="status" value="EDITING" />
+                <input type="hidden" name="expert" value="False" />
+                <input id="tab" type="hidden" name="tab" value="info" />
+
+                <div class="chunk">
+                    <div class="row">
+
+                        <div class="col-xs-12 col-sm-4">
+                            <h2>Actions:</h2>
+                        </div>
+
+                        <div class="col-xs-12 col-sm-8 text-center">
+                            <button class="btn btn-primary wide-btn" type="submit" name="submit" value="save">
+<span class="glyphicon glyphicon-floppy-disk"></span>
+Save Information</button>
+                            <button class="btn btn-success wide-btn" type="button" data-toggle="modal" data-target="#start-voting-dlg">
+<span class="glyphicon glyphicon-play"></span>
+Start Voting</button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="chunk">
+
+
+                    <ul class="nav nav-tabs
+election-tabs" role="tablist">
+
+                        <li role="presentation" class="active"><a href="#info" aria-controls="information" role="tab" data-toggle="tab">Election Info</a></li>
+
+                        <li role="presentation"><a href="#voters" aria-controls="voters" role="tab" data-toggle="tab">Voters</a></li>
+
+                        <li role="presentation"><a href="#preview-page" aria-controls="preview voting page" role="tab" data-toggle="tab"><span class="hidden-xs">Preview</span> Voting Page</a></li>
+
+                        <li role="presentation"><a href="#preview-email" aria-controls="preview voter email" role="tab" data-toggle="tab"><span class="hidden-xs">Preview</span> Voter Email</a></li>
+
+                    </ul>
+
+
+                    <div class="tab-content">
+
+
+                        <div role="tabpanel" class="tab-pane active" id="info">
+
+                            <div class="form-group ">
+                                <div class="col-xs-12 col-sm-4">
+                                    <label for="title" class="control-label">Title:</label>
+                                    <p class="small">(4-100 characters.)</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-8">
+                                    <input class="form-control topm20" id="title" name="title" type="text" value="Election Title">
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group ">
+                                <div class="col-xs-12 col-sm-4">
+                                    <label for="desc" class="control-label">Description:</label>
+                                    <p class="small">(This is used for the voting page and the voter email. Enable expert mode to further customize the voter email.)</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-8">
+                                    <textarea class="form-control" id="desc" name="desc" rows="5"></textarea>
+                                </div>
+                            </div>
+
+
+
+                            <div class="form-group ">
+                                <div class="col-xs-12 col-sm-4">
+                                    <label for="language" class="control-label">Language:</label>
+                                    <p class="small">(Language for the voting page and voting email.)</p>
+                                </div>
+                                <div class="col-xs-12 col-sm-8">
+                                    <select class="form-control max-width-100px" id="language" name="language"><option selected value="English">English</option><option value="español">español</option><option value="français">français</option><option value="português">português</option><option value="italiano">italiano</option><option value="slovensky">slovensky</option></select>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+
+                            <!-- <div class="form-group">
+                                <div class="col-xs-12 col-sm-4">
+                                    <label class="control-label">Expert mode:</label>
+                                    <div class="small">(Expert mode enables many more options for power users. You can switch back if you don't need the additional options.)</div>
+                                </div>
+                                <div class="col-xs-12 col-sm-8">
+                                    <button class="btn btn-default btn-sm" type="submit" name="submit" value="toggle-expert-mode">
+<span class="glyphicon glyphicon-education"></span>
+Enable expert mode</button>
+                                </div>
+                            </div> -->
+
+
+                            <div class="edit-contest">
+
+
+
+                                <input type="hidden" name="contests-0-title" value="Contest Title" />
+
+                                <div class="form-group ">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <label for="contests-0-candidates" class="control-label">Candidate names:</label>
+                                        <p class="small">(One per line and up to 50 characters per name.)</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <textarea class="form-control " id="contests-0-candidates" name="contests-0-candidates" rows="5">Candidate 1
+Candidate 2
+Candidate 3</textarea>
+                                    </div>
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <label for="contests-0-check_or_rank" class="control-label">Check box or ranked voting:</label>
+                                        <p class="small">(Check box voting allows voters to select one or more candidates and ranked voting allows voters to rank all candidates. Ranked votes are counted with instant runoff voting or the single transferable vote. Enable
+                                            expert mode for more options.)</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <label class="radio-inline">
+        <input  type="radio" name="contests-0-check_or_rank" id="contests-0-check_or_rank" value="check">Check box voting
+      </label>
+                                        <label class="radio-inline">
+        <input checked type="radio" name="contests-0-check_or_rank" id="contests-0-check_or_rank" value="rank">Ranked voting
+      </label>
+                                    </div>
+                                </div>
+
+
+
+
+                                <div class="form-group ">
+                                    <div class="col-xs-12 col-sm-4">
+                                        <label for="contests-0-n_seats" class="control-label">Number of winners:</label>
+                                        <p class="small">(Must be a number.)</p>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-8">
+                                        <input class="form-control max-width-100px" id="contests-0-n_seats" name="contests-0-n_seats" step="1" type="number" value="1">
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+
+                            <div class="text-center">
+                                <button class="btn btn-primary wide-btn" type="submit" name="submit" value="save">
+<span class="glyphicon glyphicon-floppy-disk"></span>
+Save Information</button>
+                                <button class="btn btn-primary" type="submit" name="submit" value="add-contest">
+<span class="glyphicon glyphicon-plus-sign"></span>
+Add Another Contest</button>
+                            </div>
+
+                        </div>
+
+
+
+                        <div role="tabpanel" class="tab-pane" id="voters">
+
+                            <h3>Email Voters</h3>
+
+                            <div class="row">
+
+                                <div class="col-xs-12 col-sm-8">
+                                    <p>Provide email addresses for the voters using one of the two methods below. The first method is to upload a plain text file that has one email address per line. The second method is to type or paste the email addresses
+                                        into a text box with one email address per line. After providing the email addresses, you can view them to find errors or confirm that they are correct.
+                                    </p>
+                                    <p class="text-danger">
+                                        You must use best efforts to ensure that voter lists have non-bouncing email addresses and are limited to people who are genuinely interested in the election. Elections with too many bouncing email addresses or voter complaints may be terminated. See
+                                        our <a href="/terms">Terms</a> for more details.</p>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="info-block">
+                                        <p>Valid emails: 0</p>
+                                        <p>Invalid emails: 0</p>
+                                        <p>Duplicate emails: 0</p>
+                                        <p>Email weights: 0</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="progress" class="progress">
+                                <div class="progress-bar progress-bar-striped active"></div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-sm-4">
+                                    <b>(1) Upload emails</b>
+                                    <p class="small">(The file must be plain text (ASCII). If you are using a program like Microsoft Word or Excel, use the "Save as" option to save as plain text. Any existing emails will be discarded.)</p>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <span class="btn btn-default btn-xs upload-btn">
+<span class="glyphicon glyphicon-upload"></span> Upload File<input id="email-upload" type="file" name="voter_list"></span>
+                                </div>
+
+                                <div class="col-sm-4">
+                                    <b>(2) Enter emails</b>
+                                    <p class="small">(Type or paste from another source. Any existing emails will be discarded.)</p>
+                                </div>
+
+                                <div class="col-sm-2">
+                                    <button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#enter-emails-dlg">
+<span class="glyphicon glyphicon-pencil"></span>
+Enter Emails</button>
+                                </div>
+
+                            </div>
+
+                            <div class="row form-row">
+
+                                <div class="col-xs-12 col-sm-4">
+                                    <b>View emails:</b>
+                                    <p class="small">(Invalid or duplicate emails will have a prefix of "INVALID:" or "DUPLICATE:", respectively. You can automatically remove invalid and duplicate emails with the Clean Emails button.)</p>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-8">
+                                    <p>
+                                        <a href="/manage/5566908336177152/emails?d=1" class="btn btn-default btn-xs">
+                                            <span class="glyphicon glyphicon-download"></span> Download Emails</a>
+                                    </p>
+                                    <p>
+                                        <a href="/manage/5566908336177152/emails-text" target="_blank" class="btn btn-default btn-xs">
+                                            <span class="glyphicon glyphicon-eye-open"></span> View Emails </a>
+                                    </p>
+                                    <p><button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#clean-emails-dlg">
+<span class="glyphicon glyphicon-scissors"></span>
+Clean Emails</button></p>
+                                </div>
+
+                            </div>
+
+                            <h3>Code Voters</h3>
+
+                            <div class="row">
+
+                                <div class="col-xs-12 col-sm-8">
+
+                                    <p>In addition to having OpaVote send secret voting codes to voters via email, you can also create a list of secret voting codes that you provide to voters in other ways. For example, you can distribute them at a meeting
+                                        to vote on a computer used as a voting kiosk, send them via paper mail, or send your own emails.</p>
+
+                                    <p>You can download the codes prior to starting voting in case you need time to process them before voting starts. After the election starts, provide this link to code voters to allow them to vote: https://www.opavote.com/en/code/5566908336177152</p>
+
+                                </div>
+
+                                <div class="col-xs-12 col-sm-4">
+                                    <div class="info-block">
+                                        <p>Code voters: 0</p>
+                                        <p>Code weights: 0</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="row form-row">
+
+                                <div class="col-xs-12 col-sm-4">
+                                    <b>Change or view code voters:</b>
+                                    <p class="small">(Contact us if you need more than 50,000 codes.)</p>
+                                </div>
+
+                                <div class="col-xs-12 col-sm-8">
+                                    <p><button type="button" class="btn btn-default btn-xs" data-toggle="modal" data-target="#change-codes-dlg">
+<span class="glyphicon glyphicon-pencil"></span>
+Change Number of Codes</button></p>
+                                    <p>
+                                        <span class="btn btn-default btn-xs upload-btn">
+<span class="glyphicon glyphicon-upload"></span> Upload Weights<input id="weight-upload" type="file" name="weights"></span>
+                                    </p>
+                                    <p>
+                                        <a href="/manage/5566908336177152/codes?d=1" class="btn btn-default btn-xs">
+                                            <span class="glyphicon glyphicon-download"></span> Download Codes</a>
+                                    </p>
+                                    <p>
+                                        <a href="/manage/5566908336177152/codes-text" target="_blank" class="btn btn-default btn-xs">
+                                            <span class="glyphicon glyphicon-eye-open"></span> View Codes</a>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div role="tabpanel" class="tab-pane" id="preview-page">
+                            <div class="container-fluid width-sm">
+
+                                <div class="alert alert-info topm20" role="alert" style="background-color: #eee; border: 0;">
+                                    Shareable full-page preview available <a href="/en/vote/5566908336177152?p=1" target="_blank">here</a>.</div>
+
+                                <div class="election">
+
+
+                                    <div class="chunk">
+
+                                        <h1>Election Title</h1>
+                                        <div>
+                                            <p>This is the description.</p>
+                                        </div>
+
+
+                                        <p><b>Instructions</b>: Use the buttons to add choices to the ballot, and then drag to arrange them in order of preference with your most preferred at the top and your least preferred at the bottom.
+                                        </p>
+
+                                        <div id="ballot-0"></div>
+                                        <input id="order-0" class="order" type="hidden" name="order-0" />
+
+                                        <p>
+                                            <b>Instructions</b>: Double check your ballot. Then click the "Vote!" button to cast your vote.</p>
+                                        <div class="notranslate text-center bottomm10">
+                                            <button class="btn btn-lg btn-success" type="button" value="Vote!">
+<span class="glyphicon glyphicon-ok"></span>
+Vote!</button>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div role="tabpanel" class="tab-pane" id="preview-email">
+                            <p></p>
+
+                            <table border="0" cellpadding="0" cellspacing="0" height="100%" id="bodyTable" width="100%">
+                                <tbody>
+                                    <tr>
+                                        <td align="center" valign="top">
+                                            <table border="0" cellpadding="20" cellspacing="0" id="emailContainer" width="600">
+                                                <tbody>
+
+                                                    <tr>
+                                                        <td valign="top">
+
+
+                                                            <p>This is the description.</p>
+
+                                                            <p>Click on this button to vote:</p>
+
+                                                            <p align="center" style="margin:20px 0;">
+                                                                <a "
+style="padding:10px 25px; color:#FFF; text-decoration:none; cursor:pointer; border-radius:5px; background-color:#3d486f; ">
+Vote</a>
+</p>
+
+<p>Do not forward this email to others, and please contact me with any questions at the email address below.</p>
+
+
+<p>
+Best regards,<br />
+Rahul Gupta<br />
+rahul26021999@gmail.com
+</p>
+
+<hr />
+
+<p>
+You are receiving this email because Rahul Gupta included you in this election.
+<a ">Unsubscribe here</a>.
+                                                            </p>
+
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+                    <div id="start-voting-dlg" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"></span></button>
+                                    <h4 class="modal-title">Start Voting</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <h1>Important!</h1>
+                                    <p>Did you double check to make sure everything is correct?</p>
+                                    <p>You cannot change any settings after you start voting. If you make a mistake, you will need to start over again (although for a technical support fee we may be able to fix some things for you).</p>
+                                    <p>This election is free!</p>
+
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" name="submit" value="start-voting" class="btn btn-primary">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="disable-expert-dlg" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"></span></button>
+                                    <h4 class="modal-title">Disable Expert Mode</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Are you sure you want to disable expert mode?</p>
+                                    <p>All expert options will be set to their default values.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" name="submit" value="toggle-expert-mode" class="btn btn-primary">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="enter-emails-dlg" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"></span></button>
+                                    <h4 class="modal-title">Enter Voter Email Addresses</h4>
+                                </div>
+                                <div class="modal-body"><textarea name="voter-list" style="width:100%;" rows=10></textarea>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" name="submit" value="enter-emails" class="btn btn-primary">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="clean-emails-dlg" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"></span></button>
+                                    <h4 class="modal-title">Clean Email Addresses</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Are you sure you want to clean the email list?</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" name="submit" value="clean-emails" class="btn btn-primary">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="change-codes-dlg" class="modal fade" tabindex="-1" role="dialog">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"></span></button>
+                                    <h4 class="modal-title">Change Code Voters</h4>
+                                </div>
+                                <div class="modal-body">Enter number of code voters:
+                                    <input name="n-code-voters" type="number" min="0" max="50000" value="0">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" name="submit" value="change-code-voters" class="btn btn-primary">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </form>
+
+            </div>
+
+            <noscript>
+<h1>Javascript Required</h1>
+<p>Javascript must be enabled for the OpaVote management console.</p>
+</noscript>
+
+        </div>
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+
+                var opavote_data = {
+                    "status": "EDITING",
+                    "show_results": "no",
+                    "description": "<p>This is the description.</p>",
+                    "title": "Election Title",
+                    "poll_registration": "cookie",
+                    "mode": "election",
+                    "error": false,
+                    "contests": [{
+                        "n_seats": 1,
+                        "description": "",
+                        "title": "Contest Title",
+                        "shuffle_cand": "yes",
+                        "ballot_type": "ranked enhanced",
+                        "require_full": "no",
+                        "candidates": ["Candidate 1", "Candidate 2", "Candidate 3"],
+                        "method": "Instant Runoff Voting"
+                    }],
+                    "eid": 5566908336177152
+                };
+                // Render page preview when the tab is clicked the first time
+                // This needs to be before call to election.init()
+                $("a[href='#preview-page']").one('shown.bs.tab', function() {
+                    election.init(opavote_data)
+                });
+                manage_editing.init();
+                $('[data-toggle="tooltip"]').tooltip();
+            });
+        </script>
+
+</body>
+
+</html>

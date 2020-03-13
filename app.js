@@ -22,11 +22,23 @@ app.use('/electionJson', (req, res, next) => {
     res.sendFile(path.join(__dirname, 'build/contracts', 'Election.json'));
 });
 
+app.use('/manage', (req, res, next) => {
+    console.log('in maane middle');
+    res.sendFile(path.join(__dirname, 'views', 'manage.html'));
+});
+app.use('/demo', (req, res, next) => {
+    console.log('in maane middle');
+    res.sendFile(path.join(__dirname, 'views', 'demo.html'));
+});
+app.use('/login', (req, res, next) => {
+    console.log('in maane middle');
+    res.sendFile(path.join(__dirname, 'views', 'login.html'));
+});
+
 app.use('/', (req, res, next) => {
     console.log('in another middle');
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
-
 app.use((req, res, next) => {
     res.status(404).sendFile(path.join(__dirname, 'views', '404.html'));
 });
