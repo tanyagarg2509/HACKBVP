@@ -17,10 +17,10 @@ app.use('/electionJson', (req, res, next) => {
     res.sendFile(path.join(__dirname, 'build/contracts', 'Election.json'));
 });
 
-// app.use('/election', (req, res, next) => {
-//     console.log('in election middle');
-//     res.sendFile(path.join(__dirname, 'views', 'eletion.html'));
-// });
+app.use('/election', (req, res, next) => {
+    console.log('in election middle');
+    res.sendFile(path.join(__dirname, 'views', 'eletion.html'));
+});
 
 app.use('/manage', (req, res, next) => {
     console.log("manage");
