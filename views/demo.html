@@ -4,7 +4,7 @@
 <head>
 
 
-    <title>OpaVote Demonstration Election | OpaVote</title>
+    <title>Ekaadhikar Demonstration Election </title>
 
     <meta name="description" content="Vote for OpaVote Demonstration Election." />
     <meta charset="utf-8">
@@ -24,10 +24,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+    <link rel="icon" type="image/png" size="96x96" href="/img/Ekaadhikar/EkaadhikarIcon.png">
     <link rel="manifest" href="/img/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
@@ -38,7 +35,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="/css/opavote.css" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" integrity="sha384-6ePHh72Rl3hKio4HiJ841psfsRJveeS+aLoaEf3BWfS+gTF0XdAqku2ka8VddikM" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" integrity="sha384-YWP9O4NjmcGo4oEJFXvvYSEzuHIvey+LbXkBNJ1Kd0yfugEZN9NCQNpRYBVC1RvA" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
@@ -65,12 +62,27 @@
 </head>
 
 <body>
-
+    <style>
+        .homeButton {
+            position: absolute;
+            top: 30px;
+            right: 220px;
+            color: white;
+            font-size: 20px;
+            padding: 5px;
+        }
+        
+        .homeButton a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
     <header class="hidden-print">
         <div class="container-fluid width-sm no-menu-header">
-            <a href="/"><img src="/img/" alt="OpaVote Online Voting"></a>
-
-
+            <a href="/"><img src="/img/Ekaadhikar/Ekaadhikar.png" alt=" Online Voting"></a>
+        </div>
+        <div class="homeButton">
+            <a href="/"><i class="fa fa-home">&nbsp&nbsp</i>HOME</a>
         </div>
     </header>
 
@@ -83,10 +95,9 @@
 
                 <div class="chunk">
 
-                    <h1>OpaVote Demonstration Election</h1>
+                    <h1>Ekaadhikar Demonstration Election</h1>
                     <div>
-                        <p>This is a demonstration election to show some of the features of OpaVote. There are five contests illustrating different voting methods supported by OpaVote. In your own elections, you can customize this text, use <b>rich</b> <i>formatting</i>,
-                            and include pictures. Below, you can also see example reports showing the results of this election so far.</p>
+                        <p>This is a demonstration election to show some of the features of Ekaadhikar. There are five contests illustrating different voting methods supported by Ekaadhikar. In your own elections, you can customize this text, use <b>rich</b>                            <i>formatting</i>, and include pictures. Below, you can also see example reports showing the results of this election so far.</p>
                     </div>
                 </div>
                 <form name="ballot" method="POST" id="ballot-form">
@@ -165,11 +176,11 @@ Vote!</button>
                     </div>
 
                 </form>
-                <div class="chunk text-center">
+                <!-- <div class="chunk text-center">
                     <p class="vcenter">
                         Preliminary results are available <a href="/results/5654402576678912">here</a> (updated every 5 minutes).
                     </p>
-                </div>
+                </div> -->
             </div>
 
             <noscript>
@@ -212,7 +223,7 @@ Vote!</button>
                     "shuffle_cand": "no",
                     "ballot_type": "choose one",
                     "require_full": "yes",
-                    "candidates": ["Yes, approve", "No, disapprove"],
+                    "candidates": ["Candidate 1", "Candidate 2"],
                     "method": "Plurality/FPTP/SNTV"
                 }, {
                     "n_seats": 1,
@@ -221,7 +232,7 @@ Vote!</button>
                     "shuffle_cand": "yes",
                     "ballot_type": "ranked simple",
                     "require_full": "no",
-                    "candidates": ["George Washington", "John Adams", "Thomas Jefferson", "James Madison", "James Monroe"],
+                    "candidates": ["Candidate 1", "Candidate 2", "Candidate 3", "Candidate 4", "Candidate 5"],
                     "method": "Instant Runoff Voting"
                 }, {
                     "n_seats": 2,
@@ -230,7 +241,7 @@ Vote!</button>
                     "shuffle_cand": "yes",
                     "ballot_type": "ranked enhanced",
                     "require_full": "no",
-                    "candidates": ["Steve Jobs", "Elon Musk", "Bill Gates", "Warren Buffet", "Richard Branson"],
+                    "candidates": ["Candidate 1", "Candidate 2", "Candidate 3", "Candidate 4", "Candidate 5"],
                     "method": "Scottish STV"
                 }, {
                     "n_seats": 1,
@@ -239,7 +250,7 @@ Vote!</button>
                     "shuffle_cand": "yes",
                     "ballot_type": "ranked simple",
                     "require_full": "no",
-                    "candidates": ["Lionel Messi", "Cristiano Ronaldo", "Pele", "Zinedine Zidane", "Diego Maradona"],
+                    "candidates": ["Candidate 1", "Candidate 2", "Candidate 3", "Candidate 4", "Candidate 5"],
                     "method": "Condorcet Beatpath"
                 }, {
                     "n_seats": 1,
