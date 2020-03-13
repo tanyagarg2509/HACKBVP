@@ -24,7 +24,6 @@ App = {
 
   initContract: function() {
     $.getJSON("electionJson", function(election) {
-      alert("hello");
       console.log(election);
       // Instantiate a new truffle contract from the artifact
       App.contracts.Election = TruffleContract(election);
