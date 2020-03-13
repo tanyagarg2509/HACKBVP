@@ -15,20 +15,8 @@
 
     <link href="https://plus.google.com/111850198888069322953" rel="publisher" />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
     <link rel="icon" type="image/png" size="96x96" href="/img/Ekaadhikar/EkaadhikarIcon.png">
-    <link rel="manifest" href="/img/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/img/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&subset=latin-ext" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
@@ -41,6 +29,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/js/opavote.min.js"></script>
 
+    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="177211142047-6bcvoso4h7rr1t4uuauup0ph9qtgg161.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/api:client.js"></script>
     <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" integrity="sha384-FFgGfda92tXC8nCNOxrCQ3R8x1TNkMFqDZVQdDaaJiiVbjkPBXIJBx0o7ETjy8Bh" crossorigin="anonymous"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
@@ -119,7 +110,47 @@
 
             <div class="form-group">
 
-                <p><a class="center-block btn btn-social btn-google" href="/login/google"><i class="fa fa-google"></i> Login with Google</a></p>
+                <p><span class="center-block btn btn-social btn-google" id="customBtn" class="g-signin2"><i class="fa fa-google"></i>Login with Google</span></p>
+
+                <script>
+                    var googleUser = {};
+                    var startApp = function() {
+                        gapi.load('auth2', function() {
+                            // Retrieve the singleton for the GoogleAuth library and set up the client.
+                            auth2 = gapi.auth2.init({
+                                client_id: '177211142047-6bcvoso4h7rr1t4uuauup0ph9qtgg161.apps.googleusercontent.com',
+                                cookiepolicy: 'single_host_origin',
+                                // Request scopes in addition to 'profile' and 'email'
+                                //scope: 'additional_scope'
+                            });
+                            attachSignin(document.getElementById('customBtn'));
+                        });
+                    };
+
+                    function attachSignin(element) {
+                        console.log(element.id);
+                        auth2.attachClickHandler(element, {},
+                            function(googleUser) {
+                                // Useful data for your client-side scripts:
+                                var profile = googleUser.getBasicProfile();
+                                console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+                                console.log('Full Name: ' + profile.getName());
+                                console.log('Given Name: ' + profile.getGivenName());
+                                console.log('Family Name: ' + profile.getFamilyName());
+                                console.log("Image URL: " + profile.getImageUrl());
+                                console.log("Email: " + profile.getEmail());
+                                document.cookie = "g_id=" + profile.getId();
+                                window.location = "/manage";
+                            },
+                            function(error) {
+                                // alert(JSON.stringify(error, undefined, 2));
+                            });
+                    }
+                </script>
+                <script>
+                    startApp();
+                </script>
+
 
                 <p><a class="center-block btn btn-social btn-facebook" href="/login/facebook"><i class="fa fa-facebook"></i> Login with Facebook</a></p>
 
@@ -178,14 +209,14 @@
         </div>
     </footer>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
         $(document).ready(function() {
 
             if (!$(".fa-facebook").is(":visible")) {
                 $("#warning").html('<h1>Adblock is blocking login buttons.  Turn off the "Fanboy\'s Annoyances" filter in AdBlock to see more login options.</h1>');
             }
         });
-    </script>
+    </script> -->
 
 </body>
 

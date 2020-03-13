@@ -467,7 +467,7 @@ footer .footer-nav ul li a {
 
 #banner {
     height: 450px;
-    background: url(https://www.opavote.com/static/img/banner-bg.jpg) no-repeat;
+    background: url(/img/Ekaadhikar/banner-bg.jpg) no-repeat;
     background-size: cover;
     background-position: center bottom;
     display: flex;
