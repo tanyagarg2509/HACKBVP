@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+
+    <title>Ekaadhikar</title>
+
+    <meta name="description" content="OpaVote is a secure, low cost, and easy-to-use service for all your election needs. Try for free to see why election managers and voters love OpaVote.">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:admins" content="100004130346820">
+    <meta id="data-locale" data-locale="en">
+
+    <link href="https://plus.google.com/111850198888069322953" rel="publisher">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="static/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="static/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="static/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="static/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="static/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="static/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="static/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="static/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/img/favicon-16x16.png">
+    <link rel="manifest" href="/static/img/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/static/img/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&subset=latin-ext" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="static/css/opavote.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/js/opavote.min.js"></script>
+
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js" integrity="sha384-FFgGfda92tXC8nCNOxrCQ3R8x1TNkMFqDZVQdDaaJiiVbjkPBXIJBx0o7ETjy8Bh" crossorigin="anonymous"></script>
+<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+<![endif]-->
+
+    <noscript>
+<style>.js-only { display:none; }</style>
+</noscript>
+
+
+    <link rel="canonical" href="https://www.opavote.com">
+    <link type="text/css" rel="stylesheet" href="static/css/opavote-home.css">
+
+</head>
+
+<body>
+
+
+    <header id="banner">
+        <div class="container">
+            <nav role="navigation" class="navbar navbar-default">
+                <div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target="#site-nav" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                    <a href class="navbar-brand"><img src="static/img/opavote-online-voting-203x56.png" alt="OpaVote Online Voting"></a>
+                </div>
+                <div id="site-nav" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="about/">About</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Help <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="help/overview/">Overview</a></li>
+                                <li><a href="help/online-elections/">Elections</a></li>
+                                <li><a href="help/online-polls/">Polls</a></li>
+                                <li><a href="help/online-counts/">Counts</a></li>
+                                <li role="separator" class="divider hidden-xs"></li>
+                                <li><a href="help/faq/">FAQ</a></li>
+                                <li><a href="help/forum/">Forum</a></li>
+                                <li><a href="help/support/">Support</a></li>
+                                <li><a href="help/api/">API</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Methods <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="methods/overview/">Overview</a></li>
+                                <li><a href="methods/recommended/">Recommendations</a></li>
+                                <li><a href="methods/traditional-plurality-voting/">Checkbox Voting</a></li>
+                                <li><a href="methods/ranked-choice-voting/">Ranked-Choice Voting</a></li>
+                                <li><a href="methods/instant-runoff-voting/">Instant Runoff Voting</a></li>
+                                <li><a href="methods/single-transferable-vote/">Single Transferable Vote</a></li>
+                                <li><a href="methods/condorcet-voting/">Condorcet Voting</a></li>
+                                <li><a href="methods/approval-voting/">Approval Voting</a></li>
+                                <li><a href="methods/other/">Other Methods</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="https://blog.opavote.com">Blog</a></li>
+                        <li><a href="pricing/">Pricing</a></li>
+                        <li>
+                            <p class="navbar-btn">
+                                <a href="login/" class="btn btn-default">Login</a>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="intro">
+            <div>
+                <h1>We Make Online Elections Easy and Affordable</h1>
+                <p class="slogan">OpaVote is a secure online voting platform that makes it easy to run elections at a fraction of the usual cost. We're the leading provider of ranked choice elections, which help achieve more democratic outcomes by better representing the
+                    will of your voters.</p>
+                <div class="intro-buttons">
+                    <a href="en/vote/5654402576678912/" class="btn btn-default demo-btn">Demo Election</a>
+                    <a href="login/" class="btn btn-default try-btn">Try it Free</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="content ">
+
+        <section class="home-band blue">
+            <div class="container">
+                <h2>Our Voting Services</h2>
+                <div class="row points">
+                    <div class="col-xs-12 col-sm-4 point">
+                        <div class="point-img white">
+                            <img src="static/img/icons/election.png" alt="Online Elections">
+                        </div>
+                        <h3>Online Elections</h3>
+                        <p>Send your voters an email with secure, single-use voting links that ensure only authorized voters can vote, once.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 point">
+                        <div class="point-img white">
+                            <img src="static/img/icons/poll.png" alt="Online Polls">
+                        </div>
+                        <h3>Online Polls</h3>
+                        <p>Create a personalized poll that anyone can vote on, and publicize it using your website, email, or social media.</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 point">
+                        <div class="point-img white">
+                            <img src="static/img/icons/count.png" alt="Automated Ballot Counts">
+                        </div>
+                        <h3>Automated Ballot Counts</h3>
+                        <p>Count ranked ballots that you've already collected (using e.g., paper ballots or your own vote collection software).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-band white">
+            <div class="container">
+                <h2>Our Customers Say it Best</h2>
+                <div class="testimonials">
+                    <div class="testimonial-wrapper">
+                        <p>
+                            OpaVote's security features made it easy for us to audit the election while maintaining the secrecy of each voter's ballot. We had confidence the results accurately reflected the wishes of our voters.
+                        </p>
+                        <p class="customer">H. Ginsberg, <span class="company">Green Democrats</span></p>
+                    </div>
+                    <div class="testimonial-wrapper">
+                        <p>
+                            A particularly good feature is the 'reminder' email that you can send out periodically over the voting period. It certainly helped boost our response - more than 50% voted, which was excellent.
+                        </p>
+                        <p class="customer">C. de Goguel, <span class="company">Worthing Green Party</span></p>
+                    </div>
+                    <div class="testimonial-wrapper">
+                        <p>
+                            In one of our elections there were 6 candidates and the one with the 3rd most votes in the initial round ended up winning. OpaVote could not have better illustrated how ranked choice voting worked.
+                        </p>
+                        <p class="customer">E. Cox, <span class="company">NY State Brewers Association</span></p>
+                    </div>
+                    <div class="testimonial-wrapper">
+                        <p>
+                            OpaVote helped us improve our governance by enlarging our voter base to all athletes. The results output is super transparent and easy to understand - the community loved it.
+                        </p>
+                        <p class="customer">W. Boddener, <span class="company">Brazil Sailing Federation</span></p>
+                    </div>
+                    <div class="testimonial-wrapper">
+                        <p>
+                            I love the fact that I can download the ballots, and recount them using different systems to see how the results would have differed. It gives OpaVote tremendous educational value.
+                        </p>
+                        <p class="customer">M. Jackson, <span class="company">St Michaels University School</span></p>
+                    </div>
+                    <div class="testimonial-wrapper">
+                        <p>
+                            We use OpaVote to elect our employee representative body. The fact that OpaVote is a trusted third party gives us confidence that no one at our company can retrieve or manipulate the votes.
+                        </p>
+                        <p class="customer">J. Kanis, <span class="company">The Hyve</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-band blue what-can-do">
+            <div class="container">
+                <h2>What You Can Do With Us</h2>
+                <div class="row points">
+                    <div class="point">
+                        <div class="point-img white">
+                            <img src="static/img/icons/elect.png" class="lean-left" alt="Elect Representatives">
+                        </div>
+                        <h3>Elect Representatives</h3>
+                        <p>Elect your organization's steering committee, employee representatives, student body leaders, condominum board members, etc. using the voting method of your choice.</p>
+                    </div>
+                    <div class="point">
+                        <div class="point-img white">
+                            <img src="static/img/icons/embrace.png" class="wide-img" alt="Embrace Candidates">
+                        </div>
+                        <h3>Embrace Candidates</h3>
+                        <p>Maximize your chances of seeing grassroots action by having your political party's members surface the candidates they're most willing to back.</p>
+                    </div>
+                    <div class="point">
+                        <div class="point-img white">
+                            <img src="static/img/icons/streamline.png" class="wide-img" alt="Streamline Decisions">
+                        </div>
+                        <h3>Streamline Decisions</h3>
+                        <p>Streamline your formal board or committee meetings. Use them to officially record what has already been pre-discussed and voted on ahead of time by email.</p>
+                    </div>
+                    <div class="point">
+                        <div class="point-img white">
+                            <img src="static/img/icons/strike.png" class="medium-img lean-left" alt="Assess Industrial Action">
+                        </div>
+                        <h3>Assess Industrial Action</h3>
+                        <p>Discreetly and inexpensively check if your union's members would like to strike before holding a formal assembly or sending an expensive 'legal' postal ballot.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 text-center">
+                        <p>OpaVote is used by <a href="HOA-condo-elections/">homeowner associations</a>, <a href="company-elections/">companies</a>, <a href="high-school-elections/">high schools</a>, <a href="university-college-elections/">universities and colleges</a>,
+                            <a href="nonprofit-elections/">nonprofit organizations</a>, and <a href="political-party-elections/">political parties</a> around the world.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-band white standard-asset easy-setup">
+            <div class="container">
+                <div class="row">
+                    <div class="text-container">
+                        <h2>Easy to Set Up and Vote</h2>
+                        <p>We make it super easy for you to set up an election and for your voters to cast their votes.</p>
+                        <p>When your election starts, each of your voters will receive an email with a secret, single-use voting link. Your voter then just clicks that link to be immediately taken to the voting page. Because our process is so easy for voters,
+                            we get a higher percentage of voters to actually vote.</p>
+                        <p>Our interface allows both regular (check box) voting and (drag and drop) ranked choice voting. You can try the voting interface in the example ballots that follow or by <a href="en/vote/5654402576678912/">casting a vote</a> in
+                            our demonstration poll.</p>
+                    </div>
+                    <div class="asset-container">
+                        <div id="ballot-0"></div>
+                        <div id="ballot-1"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-band gray standard-asset voting-methods">
+            <div class="container">
+                <div class="row">
+                    <div class="asset-container">
+                        <a class="white-card" href="methods/single-transferable-vote/">Single Transferable Vote</a>
+                        <a class="white-card" href="methods/other/#borda-count">Borda</a>
+                        <a class="white-card" href="methods/instant-runoff-voting/">Instant Runoff Voting</a>
+                        <a class="white-card" href="methods/condorcet-voting/">Condorcet</a>
+                        <a class="white-card" href="methods/approval-voting/">Approval Voting</a>
+                        <a class="white-card" href="methods/traditional-plurality-voting/">Plurality/FPTP</a>
+                    </div>
+                    <div class="text-container">
+                        <h2>All Main Voting Methods</h2>
+                        <p>We support most well known counting methods. OpaVote lets you do a <a href="methods/traditional-plurality-voting/">traditional election</a> where voters select a single candidate, <a href="methods/ranked-choice-voting/">ranked-choice voting</a>                            (e.g., <a href="methods/single-transferable-vote/">STV</a>, <a href="methods/instant-runoff-voting/">IRV</a>, or <a href="methods/condorcet-voting/">Condorcet</a>),
+                            <a href="methods/approval-voting/">approval voting</a>, or more than one contest with any combination of methods.</p>
+                        <p>We also support <a href="https://blog.opavote.com/2018/04/weighted-votes-with-ranked-choice-voting.html">weighted voting</a>, to accomodate scenarios where some of your voters are more equal than others - based on their number
+                            of shares, their property's surface, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-band white standard-asset pricing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="text-container">
+                        <h2>Fanatically Low Prices</h2>
+                        <p>Our prices are low and easy to understand, with no commitments or hidden fees:</p>
+                        <ul>
+                            <li>Each $10 gets you up to 125 voters and 10 candidates across <span class="nowrap">any number of contests.</span></li>
+                            <li>Polls always have unlimited voters.</li>
+                            <li>Elections stay on our systems for a total of 12 weeks.</li>
+                        </ul>
+                        <p>OpaVote is free of charge for elections with up to 25 voters and 10 candidates. <a href="login/">Evaluate our service</a> now by running a small test election with your colleagues.</p>
+                    </div>
+                    <div class="asset-container">
+                        <div class="panel panel-default pricing-panel">
+                            <div class="panel-heading"><b>Price Calculator</b></div>
+                            <div class="panel-body text-left">
+                                <div id="item-btns" class="btn-group" role="group">
+                                    <button id="election-btn" type="button" class="btn btn-success">Election</button>
+                                    <button id="poll-btn" type="button" class="btn btn-default">Poll</button>
+                                    <button id="count-btn" type="button" class="btn btn-default">Count</button>
+                                </div>
+                            </div>
+                            <p style="height: 28px;">Voters:
+                                <span id="unlimited" style="display: none;">unlimited</span>
+                                <input type="number" min="0" max="100000" step="25" id="voters" value="25" class="text-right"></p>
+                            <p>Candidates: <input type="number" min="0" max="1000" step="10" id="candidates" value="10" class="text-right"></p>
+                            <p>Price: <span class="text-danger">$<span id="price">0</span></span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-band gray standard-asset monitoring-tools">
+            <div class="container">
+                <div class="row">
+                    <div class="asset-container">
+                        <div class="white-card">
+                            <img src="static/img/voter-stats.png" alt="Great Monitoring Tools">
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <h2>Great Monitoring Tools</h2>
+                        <p>One of the hardest aspects of running online elections is delivering the voting emails. Our <a href="https://blog.opavote.com/2016/05/monitoring-email-delivery.html">reporting tools</a> update you in real time so that you know
+                            which voters have received emails, opened them, visited your voting page, and voted. You get an explanation (e.g., mailbox full) for emails that are not delivered and can drill down to resend them.</p>
+                        <p>OpaVote also has backup email delivery. We automatically detect when emails get mislabeled as spam (about 1%) and resend them using a different service. This gives us very high deliverability with no effort on your part.</p>
+                        <p>Last but not least you can send periodic reminders to voters who haven't voted yet. This helps you maximize voter participation and is a client favorite.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-band white standard-asset transparent-results">
+            <div class="container">
+                <div class="row">
+                    <div class="text-container">
+                        <h2>Transparent Results</h2>
+                        <p>Voters love the clear and transparent results OpaVote will enable you to provide them with. At the end of your election, you'll get the raw ballots as well as a detailed report with counts automatically done for you. The step by
+                            step explanation of these counts are based on the voting method you used, and interactive graphics allow you can see the fine-grained <span class="nowrap">details at each step.</span></p>
+                        <p>You can try a report's look and feel by looking at the <a href="results/5654402576678912/1/">results of our demonstration poll</a>.</p>
+                    </div>
+                    <div class="asset-container">
+                        <div class="white-card">
+                            <img src="static/img/results-interface.png" alt="Transparent Results">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-band gray standard-asset on-site">
+            <div class="container">
+                <div class="row">
+                    <div class="asset-container">
+                        <img src="static/img/works-onsite.png" alt="Works On-Site">
+                    </div>
+                    <div class="text-container">
+                        <h2>Also <span class="nowrap">Works On-Site</span></h2>
+                        <p>OpaVote makes it super easy to combine having on-site and offsite voters in your election.</p>
+                        <p>By using single-use code voters (which also come in handy when spouses share the same email address), you can have voters who can make it to your venue(s) cast their vote in booths using PCs or tablets, and voters who can't make
+                            it cast their vote by email on their own devices. Once the voting ends, OpaVote will provide you with the final count directly, without any manual steps on your part.</p>
+                        <p>See our blog post on <a href="https://blog.opavote.com/2015/09/using-opavote-for-onsite-elections.html">using OpaVote for on-site elections</a> for more details.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-band blue">
+            <div class="container">
+                <h2>Secure and Trustworthy</h2>
+                <div class="row points">
+                    <div class="col-xs-12 col-sm-4 point">
+                        <div class="point-img white">
+                            <img src="static/img/icons/locked.png" alt="Secure">
+                        </div>
+                        <h3>Secure</h3>
+                        <p>Our voting pages are encrypted so your voters can enjoy complete security and privacy while voting. See our <a href="https://blog.opavote.com/2017/12/opavote-security-practices.html">blog post on security</a> <span class="nowrap">for more details.</span></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 point">
+                        <div class="point-img white">
+                            <img src="static/img/icons/private.png" alt="Anonymous">
+                        </div>
+                        <h3>Anonymous</h3>
+                        <p>We offer the strongest possible guarantee of voter anonymity: we simply do not track who votes for what; only who votes, and <span class="nowrap">what the vote is.</span></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 point">
+                        <div class="point-img white">
+                            <img src="static/img/icons/shake-hands.png" alt="Private">
+                        </div>
+                        <h3>Private</h3>
+                        <p>We do not use or share your voters' email addresses for any purposes outside of your election. See our <a href="privacy/">privacy policy</a> <span class="nowrap">for more details.</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-band white standard-asset indisputable-results">
+            <div class="container">
+                <h2>Indisputable Results</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6 text-container">
+                        <p>We're an independent third-party with no stakes in your election, and we've built OpaVote so it can only operate like a non-biaised and uninterested referee that you and your voters can trust.</p>
+                        <p>You and your voters can thus rest assured that no one in your election - not even yourself - can tamper with or improperly influence your <span class="nowrap">election's results.</span></p>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 asset-container">
+                        <img src="static/img/ballot-safe.png" alt="Indisputable Results">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-band cta-section">
+            <h3>Start Making All Votes Matter</h3>
+            <a class="btn cta-btn" href="login/">Sign Up and Try it Free</a>
+        </section>
+
+
+        <div id="subscribe-form" class="alert alert-dismissible hidden-xs small">
+            <button type="button" class="close">&times;</button>
+            <div><b>OpaVote Quarterly Newsletter</b></div>
+            <div class="row">
+                <div class="col-xs-8 col">Stay up to date with new features, blog posts, and special offers.</div>
+                <div class="col-xs-4 col"><a href=" http://opavote.us12.list-manage.com/subscribe?u=de2788622eab09f47399ce4a8&id=fa40a51e90" class="btn btn-default" target="_blank">Subscribe</a></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <footer class="blue hidden-print text-center">
+        <div class="container">
+            <div class="footer-nav">
+                <ul>
+                    <li><a href="terms/">Terms</a></li>
+                    <li><a href="privacy/">Privacy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            var opavote_data = {
+                "status": "VOTING",
+                "show_results": "yes",
+                "description": "<p>To try ranked-choice voting, vote for your favorite ice cream flavor.</p>",
+                "title": "Website Example Ballots",
+                "poll_registration": "none",
+                "mode": "poll",
+                "error": false,
+                "contests": [{
+                    "n_seats": 1,
+                    "description": "",
+                    "title": "Favorite Ice Cream Flavor",
+                    "shuffle_cand": "yes",
+                    "ballot_type": "ranked simple",
+                    "require_full": "no",
+                    "candidates": ["Vanilla", "Chocolate", "Strawberry", "Chocolate Chip", "Cookies &amp; Cream"],
+                    "method": "Instant Runoff Voting"
+                }, {
+                    "n_seats": 1,
+                    "description": "",
+                    "title": "Favorite Ice Cream Flavor",
+                    "shuffle_cand": "yes",
+                    "ballot_type": "choose one",
+                    "require_full": "no",
+                    "candidates": ["Vanilla", "Chocolate", "Strawberry", "Chocolate Chip", "Cookies &amp; Cream"],
+                    "method": "Plurality/FPTP/SNTV"
+                }, {
+                    "n_seats": 1,
+                    "description": "",
+                    "title": "Favorite Ice Cream Flavor",
+                    "shuffle_cand": "yes",
+                    "ballot_type": "choose one",
+                    "require_full": "no",
+                    "candidates": ["Vanilla", "Chocolate", "Strawberry", "Chocolate Chip", "Cookies &amp; Cream"],
+                    "method": "Approval Voting"
+                }],
+                "eid": 6060490803380224
+            };
+            election.init(opavote_data);
+            $('.choose-one li:first-child').click();
+            compute_price.init();
+            newsletter();
+        });
+    </script>
+
+</body>
+
+</html>
