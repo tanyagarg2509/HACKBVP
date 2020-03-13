@@ -16,6 +16,10 @@ app.use('/manage', (req, res, next) => {
     console.log('in maane middle');
     res.sendFile(path.join(__dirname, 'views', 'manage.html'));
 });
+app.use('/login', (req, res, next) => {
+    console.log('in maane middle');
+    res.sendFile(path.join(__dirname, 'views', 'login.html'));
+});
 app.use('/', (req, res, next) => {
     console.log('in another middle');
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
