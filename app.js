@@ -12,6 +12,16 @@ app.use(express.static(path.join(__dirname, 'public')));
 // const adminData = require('./routes/admin');
 // const shopRoutes = require('./routes/shop');
 
+app.use('/election', (req, res, next) => {
+    console.log('in election middle');
+    res.sendFile(path.join(__dirname, 'views', 'eletion.html'));
+});
+
+app.use('/electionJson', (req, res, next) => {
+    console.log('in another middle');
+    res.sendFile(path.join(__dirname, 'build/contracts', 'Election.json'));
+});
+
 app.use('/', (req, res, next) => {
     console.log('in another middle');
     res.sendFile(path.join(__dirname, 'views', 'index.html'));
